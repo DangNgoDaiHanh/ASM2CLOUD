@@ -1,5 +1,5 @@
 <?php
-    
+    // include_once './header.php';
     include_once 'connect.php';
     $c = new Connect();
     $dblink = $c->connectToPDO();
@@ -27,66 +27,69 @@
     }
 ?>
 
-<!--add product-->
+<!-- add product -->
 <fieldset>
 
 <!-- Form Name -->
-<legend>PRODUCTS</legend>
+<!-- <legend>PRODUCTS</legend> -->
 <div id="main" class="container">     
         <div className="page-heading pb-2 mt-4 mb-2 ">
-        <h1>ADD NEW PRODUCT</h1>
+        <h1 style="text-align:center">ADD NEW PRODUCT</h1>
         </div>
         
             <div id="main" class="container mt-4">     
                         <form class="form-vertical" method="POST" action="#" enctype="multipart/form-data">
                             <div class="form-body">
-                                <div class="row">
+                                <div class="row" style="padding-left: 600px;">
 
-                            <table>
+                            <table class="col-10">
                             <div class="form-group">
+                                <!-- <div class="mb-3">
+                                        <label for="exampleFormControlInput1" class="form-label">Product ID</label>
+                                        <input type="text" class="form-control" name="pID" id="exampleFormControlInput1" placeholder="">
+                                    </div> -->
                                 <tr>
-                                    <th>Product ID:</th>
-                                        <td><input type="text" name="pid" value=""></td>
+                                    <th style="font-size: 20px;">Product ID:</th>
+                                        <td><input type="text" name="pid" value="" style="width: 500px; height:40px; font-size: 20px; margin: auto;"></td>
                                 </tr>
                                 <div class="form-group">
                                 <tr>
-                                    <th>Product Name:</th>
-                                        <td><input type="text" name="Name" value=""></td>
+                                    <th style="font-size: 20px;">Product Name:</th>
+                                        <td><input type="text" name="Name" value="" style="width: 500px; height:40px; font-size: 20px; margin: auto;"></td>
                                 </tr> 
 
                                 <tr>
-                                    <th>Price:</th>
-                                        <td><input type="text" name="Price" value=""></td>
+                                    <th style="font-size: 20px;">Price:</th>
+                                        <td><input type="text" name="Price" value="" style="width: 500px; height:40px; font-size: 20px; margin: auto;"></td>
                                 </tr> 
                                 <div class="form-group">
                                 <tr>
-                                    <th>Status:</th>
-                                        <td><input type="text" name="Status" value=""></td>
+                                    <th style="font-size: 20px;">Status:</th>
+                                        <td><input type="text" name="Status" value="" style="width: 500px; height:40px; font-size: 20px; margin: auto;"></td>
                                 </tr>
                                 <div class="form-group">
                                 <tr>
-                                    <th>Quantity:</th>
-                                        <td><input type="text" name="Quantity" value=""></td>
+                                    <th style="font-size: 20px;">Quantity:</th>
+                                        <td><input type="text" name="Quantity" value="" style="width: 500px; height:40px; font-size: 20px; margin: auto;"></td>
                                 </tr>
                                 <div class="form-group">
                                 <tr>
-                                    <th>PCartID:</th>
-                                        <td><input type="text" name="pCart_id" value=""></td>
+                                    <th style="font-size: 20px;">PCartID:</th>
+                                        <td><input type="text" name="pCart_id" value="" style="width: 500px; height:40px; font-size: 20px; margin: auto;"></td>
                                 </tr> 
                             </table> 
                                     <div class="col-12">
                                         <div class="form-group">
-                                            <label for="image-vertical">Image</label>
+                                            <label for="image-vertical" style="font-size: 25px; padding-left: 30px;">Image:</label>
                                             <input type="file" name="Pro_image" 
                                             id="Pro_image" 
-                                            class="form-control" value="">
+                                            class="form-control" value="" style="font-size: 20px; padding-left: 33px">
                                         </div>
-                                        
                                     </div>
-                                    <div class="col-12 d-flex mt-3 justify-content-center">
+                                    <div class="col-12 d-flex mt-3 justify-content-center" style="padding-left:350px;">
                                         <button type="submit"  
                                         class="btn btn-warning me-1 mb-1 rounded-pill" 
-                                        name="btnSubmit">Submit</button>
+                                        name="btnSubmit" style="font-size: 22px; border-radius:5px; background-color: cornflowerblue; color: white; font-weight:bold">Submit</button>
                                     </div>                                    
                                 </div>   
                             </div>
